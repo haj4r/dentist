@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-padding-top: 4rem;
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
     list-style: none;
     text-decoration: none;
 }
@@ -137,10 +137,14 @@ header{
   gap: 2rem;
 }
 .home-text h1{
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0;
+}
+.home-text a{
+  scroll-padding-top: 4rem;
+  scroll-behavior: smooth;
 }
 .btn{
   padding: 10px 40px;
@@ -173,10 +177,10 @@ header{
 }
 
 .container {
- width: 40%;
- height: 60%;
+ width: 60%;
+ height: 65%;
  border-radius: 0.5rem;
- background-color: rgb(219, 218, 218);
+ background-color: #bcd2e0;
  margin-right: auto;
  margin-left: auto;
  display: flex;
@@ -186,8 +190,8 @@ header{
 }
 .form form{
   border-radius: 0.5rem;
-  background-color: var(--light-bg);
-  padding: 12px;
+  background-color: #bcd2e0;
+  padding: 20px;
   margin:0 auto;
   max-width: 50rem;
 }
@@ -219,3 +223,4 @@ header{
   border-color: #6c97af;
   background: #6c97af;
 }
+

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Select</title>
+    </head>
+    <body>
+        <select name="test" id="mySelect" onchange="myFunction()">
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            </select>
+            
+            <p id="demo"></p>
+            
+            <script>
+            function myFunction() {
+                var x = document.getElementById("mySelect").value;
+                if(x == "two"){
+                   document.getElementById("demo").innerHTML = "You selected: " + x;
+                }
+            }
+            </script>
+    </body>
+</html>

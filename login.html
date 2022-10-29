@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Dentist Appointment</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<style>
+body {
+    background-image: url('img/backgroud.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    color: #fff;
+}
+.loginbox{
+    width: 320px;
+    height: 420px;
+    background: rgb(43, 30, 100);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.loginbox input{
+   width: 100%;
+   margin-bottom: 20px;
+}
+.loginbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgb(100, 102, 153);
+    font-size: 16px;
+    color: #fff;
+    border-radius: 18px;
+}
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: rgb(132, 118, 192);
+    color: #fff;
+}
+.loginbox a{
+   color: #fff;
+}
+.loginbox a:hover{
+    cursor: pointer;
+    color: rgb(151, 140, 245);
+}
+</style>
+<body>
+    <div class="loginbox">
+        <img src="img/avatar.png" class="avatar"> 
+        <h1>Welcome back!</h1>
+        <form>
+            <p>Username</p>
+            <input type="text" name="" placeholder="XXXXXXXX" class="box" required>
+            <p>Password</p>
+            <input type="password" name="" placeholder="XXXXXXXX" class="box" required>
+            <input type="submit" name="" value="Login"><br>
+            <!-- <a href="#">Forget password?</a><br> -->
+            <a href="Signup.html">Don't have an account?</a>
+        </form>
+    </div>
+< 

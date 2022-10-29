@@ -17,20 +17,26 @@
      <div class="container">
  <form>
  
-     <h1 class="heading">Appointment Forms :</h1> 
+     <h1 class="heading"><p>Appointment Forms :</p></h1> 
        <span>Name :</span>
        <input type="text" name="name" placeholder="XXXX XXXXX XXXXX" class="box" required>
        <span><p>Email :</span>
        <input type="email" name="email" placeholder="email@gmail.com" class="box" required></p>
        <span><p>Contact Number :</span>
-       <input type="number" name="number" placeholder="XXX-XXXXXXX" class="box" required></p>
-       <span><p>Services :</span>
-        <input type="number" name="number" placeholder="XXX-XXXXXXX" class="box" required></p>
+       <input type="contact" name="contact" placeholder="XXX-XXXXXXX" class="box" required></p>
+       <span><p>Service :</span>
+       <select type="service" name="service" placeholder="XXX-XXXXXXX" class="box" required>
+        <option value="Service 1">Complete exams, x-rays, and dental cleanings </option>
+        <option value="Service 2">Fillings </option>
+        <option value="Service 3">Root canals and extractions</option>
+        <option value="Service 4">Implants - placement and restoration </option>
+        <option value="Service 5">Orthodontics </option>
+        <option value="Service 6">Whitening </option>
+        <option value="Service 7">Nutritional counseling </option></p>
        <span><p>Appointment date :</span>
        <input type="datetime-local" name="date" class="box" required></p>
        <input type="submit" value="Book Now >>" name="submit" class="submit">
     </form>  
  </div> 
  </section>
- 
     </body>
