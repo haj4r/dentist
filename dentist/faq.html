@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faq JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+   *,
+   *::before,
+   *::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+   
+   html {
+     font-size: 12px;
+   }
+   
+   body {
+     min-height: 100vh;
+     font-family: 'Poppins', sans-serif;
+     background: #efefef;
+     display: flex;
+     justify-content: center;
+   }
+   
+   .container {
+     position: relative;
+     background: #fff;
+     margin-top: 50px;
+     margin-bottom: 30px;
+     border-radius: 10px;
+     filter: drop-shadow(0 0 10px
+             rgba(0, 0, 0, 0.5));
+   }
+   
+   .accordion {
+     position: relative;
+     width: 350px;
+     margin-left: 40px;
+   }
+   
+   .title {
+     margin-top: 20px;
+     font-size: 2rem;
+     text-align: center;
+   }
+   
+   .content-accordion {
+     margin-top: 35px;
+     margin-right: 50px;
+   }
+   
+   .question-answer {
+     width: 100%;
+     border-bottom: 1px solid #e8e8e8;
+   }
+   
+   .question {
+     display: flex;
+     justify-content: space-between;
+   }
+   
+   .accordion-img {
+     position: relative;
+     width: 320px;
+   }
+   
+   .title-question {
+     margin: 1.4rem 0rem;
+     font-size: 1.2rem;
+     font-weight: 500;
+     color: #000;
+   }
+   
+   .question-btn {
+     font-size: 1.5rem;
+     background: transparent;
+     border-color: transparent;
+     cursor: pointer;
+   }
+   
+   .up-icon {
+     display: none;
+   }
+   
+   .answer {
+     font-size: 1.2rem;
+     line-height: 1.8;
+     display: none;
+   }
+   
+   .show-text .answer {
+     display: block;
+   }
+   
+   .show-text .up-icon {
+     display: inline;
+   }
+   
+   .show-text .down-icon {
+     display: none;
+   }
+   
+   @media screen and (min-width: 992px) {
+     .accordion {
+       width: 920px;
+       height: 0;
+       display: flex;
+     }
+   
+     .accordion-img {
+       position: relative;
+       width: 420px;
+       top: 88px;
+     }
+   
+     .question-answer {
+       width: 380px;
+     }
+   
+     .content-accordion {
+       margin-top: 85px;
+     }
+   
+     .title {
+       margin-top: 50px;
+       font-size: 3rem;
+     } }
+     </style>
+<body>
+    <div class="container">
+        <h1 class="title">
+            Frequenty Asked Questions
+        </h1>
+        <main class="accordion">
+            <div class="faq-img">
+                <img src="img/faqs.jpg" alt="" class="accordion-img">
+            </div>
+            <div class="content-accordion">
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                            Do you do a Front-end developer?
+                        </h3>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. 
+                            Quisquam assumenda sapiente 
+                            mollitia excepturi quos id 
+                            magnam obcaecati non est? 
+                            Maiores?</p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                            What is the differrence between 
+                            Front-end and Back-end?
+                        </h3>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. 
+                            Quisquam assumenda sapiente 
+                            mollitia excepturi quos id 
+                            magnam obcaecati non est? 
+                            Maiores?</p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                            Which is better Front-end or Back-end?
+                        </h3>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. 
+                            Quisquam assumenda sapiente 
+                            mollitia excepturi quos id 
+                            magnam obcaecati non est? 
+                            Maiores?</p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                            What is Front-end?
+                        </h3>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. 
+                            Quisquam assumenda sapiente 
+                            mollitia excepturi quos id 
+                            magnam obcaecati non est? 
+                            Maiores?</p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h3 class="title-question">
+                            What is Back-end?
+                        </h3>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. 
+                            Quisquam assumenda sapiente 
+                            mollitia excepturi quos id 
+                            magnam obcaecati non est? 
+                            Maiores?</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+   
+    <script src="main.js">
+    </script>
+
+</body>
+</html>

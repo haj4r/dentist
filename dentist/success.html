@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Book an Appointment-Root Driver Clinic</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <style>
+    body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+      color: #fff;
+      letter-spacing: 1px;
+  }
+  
+  .container {
+      background-color: #fafafa;
+      max-width: 1000px;
+      margin: 60px auto;
+      box-shadow: 20px 25px 30px rgba(0, 0, 0, .1);
+      display: flex;
+      border-radius: 5px;
+  }
+  
+  .container-time {
+      background-color: rgba(64, 8, 196, 0.95);
+      padding: 50px 50px;
+      outline: 3px dashed #ffffff;
+      outline-offset: -30px;
+      text-align: center;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, .1);
+      border-radius: 5px;
+  }
+  .heading {
+      font-size: 35px;
+      text-transform: uppercase;
+  }
+  
+  .heading-days {
+      color:#ffffff;
+      font-size: 30px;
+  }
+  
+  .heading-phone {
+      font-size: 20px;
+  }
+  .container-form {
+      padding: 20px 0;
+      margin: 0 auto;
+      color: rgb(0, 0, 0);
+  }
+  .container-form
+  form {
+      display: grid;
+      grid-row-gap: 20px;
+  }
+  .container-form input[type="text"]
+  {
+      border:none;
+      width: 100%;
+      padding: 10px 18px;
+      margin: 10px 0;
+      box-sizing: border-box;
+      background-color:rgb(231, 231, 231);
+      outline:none;
+      height: 35px;
+      color: #000000;
+      font-size: 14px;
+  }
+  form p {
+    font-weight: 12px; 
+    /* text-align: center; */
+  }
+  .form-field {
+      display: grid;
+      grid-row-gap: 5px;
+      text-align: left;
+      
+  }
+  
+  .form-field input[type="date"],[type="time"]{
+      border:none;
+      width: 100%;
+      padding: 10px 18px;
+      margin: 10px 0;
+      box-sizing: border-box;
+      background-color:rgb(231, 231, 231);
+      outline:none;
+      height: 40px;
+      color: #000000;
+      font-size: 14px;
+      text-align: left;
+  }
+  
+  input,select {
+    pad: 20px 20px;
+    border-radius: 2px;
+    width: 50%;
+  }
+  .container-form input,select[type="service"]{
+      border:none;
+      width: 100%;
+      padding: 10px 18px;
+      margin: 10px 0;
+      box-sizing: border-box;
+      background-color:rgb(231, 231, 231);
+      outline:none;
+      height: 40px;
+      color: #000000;
+      font-size: 14px;
+  }
+  
+  
+  .container-form input[type="home"] 
+    {
+      border: none;
+      outline: none;
+      height: 40px;
+      background: rgb(160, 164, 255);
+      font-size: 16px;
+      color: #fff;
+      border-radius: 18px;
+    }
+    
+    .container-form input[type ="home"]:hover {
+      cursor: pointer;
+      background: rgb(132, 118, 192);
+      color: #fff;
+    }
+    
+  
+  @media screen and (max-width: 768px) {
+      .container {
+          flex-direction: column;
+      }
+      .container-form  {
+          padding: 20px;
+      }
+      .heading-phone {
+          font-size: 17px;
+      }
+      
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 880px) {
+      .container-time {
+          padding: 30px;
+      }
+      .container-form  {
+          padding: 10px;
+      }	
+  }
+  .social-links a{
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(255,255,255,0.2);
+      margin:0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #ffffff;
+      transition: all 0.5s ease;
+  }
+  .social-links a:hover{
+      color: #24262b;
+      background-color: #ffffff;
+  }
+  </style>
+  <body>
+    <!-- navbar -->
+    <!-- navbar ends -->
+    <div class="wrapper">
+
+
+        <div class="container">
+          
+          <div class="container-form">
+              <form action="#">
+                <h2 class="heading heading-blue">Appointment has been created!</h2>
+      
+                  <p>Full Name :</p>
+                  <input type="text" >
+                  <p>Contact :</p>
+                  <input type="text" >
+                    <p>Email : </p>
+                  <input type="text" >
+                <p>Service:</p>
+                  <input type="text" >
+                <div class="form-field">
+                  <p>Date:</p>
+                  <input type="date" >  
+                </div>
+                <div class="form-field">
+                  <p>Time:</p>
+                  <input type="time">
+                </div>
+
+              </form>
+          </div>
+        </div>
+      </div>	
+<!-- footer -->
+        <footer class="footer" id="footer">
+          <div class="container1">
+            <div class="row1">
+              <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                  <li><a href="Index.html">Home</a></li>
+              
+                </ul>
+              </div>
+        
+              <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="forms.html">Book an appointment </a></li>
+                  <li><a href="#">Appointment status</a></li>
+                  <li><a href="#">Reviews</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                  <li><a href="#">03-7863381</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>	  
+     
+  </body>

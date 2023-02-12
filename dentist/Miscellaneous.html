@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Root Driver Clinic-Dentist Clinic</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<style>
+
+  .container {
+   box-sizing: border-box;
+   min-height: 70vh; 
+   font-family: 'Poppins', sans-serif;
+   background: #efefef;
+   /* display: flex;
+   justify-content: center; */
+   background: #fff;
+   margin-top: 20px;
+   margin-bottom: 30px;
+   border-radius: 10px;
+   font-size: 10px;
+   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  }
+  
+  .accordion {
+    position: relative;
+    width: 400px;
+    margin-left: 30px;
+  }
+  
+  .content-accordion {
+    margin-top: 35px;
+    margin-right: 50px;
+  }
+  
+  .question-answer {
+    width: 80%;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  
+  .question {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .accordion-img {
+    position: relative;
+    width: 320px;
+  }
+  
+  .title-question {
+    margin: 1.4rem 0rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000;
+  }
+  
+  .question-btn {
+    font-size: 1.5rem;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+  }
+  
+  .up-icon {
+    display: none;
+  }
+  
+  .answer {
+    font-size: 1rem;
+    line-height: 1.8;
+    display: none;
+  }
+  
+  .show-text .answer {
+    display: block;
+  }
+  
+  .show-text .up-icon {
+    display: inline;
+  }
+  
+  .show-text .down-icon {
+    display: none;
+  }
+  
+  @media screen and (min-width: 992px) {
+    .accordion {
+      width: 920px;
+      height: 0;
+      display: flex;
+    }
+  
+    .accordion-img {
+      position: relative;
+      width: 420px;
+      top: 88px;
+    }
+  
+    .question-answer {
+      width: 490px;
+    }
+  
+    .content-accordion {
+      margin-top: 85px;
+    }
+  
+    .title {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 3rem;
+    } }
+    </style>
+<body>
+<!-- navbar -->
+<header>
+  <a href="#" class="logo">
+    <img src="img/logo.png" alt="">
+  </a>
+  <!-- Menu icon -->
+  <i class='bx bx-menu' id="menu-icon"></i>
+  <!-- links -->
+  <ul class="navbar">
+    <li><a href="indexlogin.html">Home</a></li>
+    <li><a href="#footer">Contact</a></li>
+    <li><a href="Index.html">Log out</a></li>
+  </ul>
+  
+</header>
+<!-- content -->
+<section class="about" id="about">
+  <div class="retainer-img">
+    <img src="img/retainer.jpg" alt="">
+  </div>
+  <div class="retainer-text">
+  <h2>Retainers </h2>
+  <p>
+    A teeth retainer is a custom-made device you wear in your mouth over your teeth.
+    <b>It helps keep your teeth in their new, correct position after braces. </b><br>
+    Braces make teeth straight, but they aren't completely firm until the gums, bones and muscles get used to the change.
+     Wearing a retainer helps keep them in the correct place, allowing them to "retain" their position.
+    <br><br>
+      <b>Make an appointment with us - Retainers and more dental clinic!</b></p> 
+      <a href="appointment.html" class="btn">Book an Appointment >></a>
+</div>
+</section>
+<!-- faqs starts -->
+<!-- questions -->
+<section>
+  <div class="container">
+    
+    <main class="accordion">
+        <div class="faq-img">
+            <img src="img/faqs.jpg" alt="" class="accordion-img">
+        </div>
+        <div class="content-accordion">
+            <div class="question-answer">
+                <div class="question">
+                    <h3 class="title-question">
+                      What are the advantages of using a retainer?
+                    </h3>
+                    <button class="question-btn">
+                        <span class="up-icon">
+                            <i class="fas fa-chevron-up"></i>
+                        </span>
+                        <span class="down-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="answer">
+                    <p>With the long-term use of a teeth retainer, 
+                      all the hard work you put into getting and wearing braces pays off.</p>
+                </div>
+            </div>
+            <div class="question-answer">
+                <div class="question">
+                    <h3 class="title-question">
+                      What happens if I don’t wear my retainer?
+                    </h3>
+                    <button class="question-btn">
+                        <span class="up-icon">
+                            <i class="fas fa-chevron-up"></i>
+                        </span>
+                        <span class="down-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="answer">
+                    <p>It’s normal for teeth to move over time. If you don’t wear your retainer, your teeth will shift and move.
+                       They can become crooked, crowded or misaligned. Or you can develop an overbite. 
+                      That’s why most dental providers prescribe the use of a teeth retainer after braces come off.</p>
+                </div>
+            </div>
+            
+    </main>
+  </div>
+  
+  </section>
+  <script src="main.js">
+  </script>
+<!-- ends -->
+<!-- It’s normal for teeth to move over time. If you don’t wear your retainer, your teeth will shift and move.
+   They can become crooked, crowded or misaligned. Or you can develop an overbite. 
+  That’s why most dental providers prescribe the use of a teeth retainer after braces come off. -->
+<!-- content ends -->
+ <!-- footer starts -->
+ <footer class="footer" id="footer">
+  <div class="container1">
+    <div class="row1">
+      <div class="footer-col">
+        <h4>company</h4>
+        <ul>
+          <li><a href="#about">about us</a></li>
+          <li><a href="#services">our services</a></li>
+          <li><a href="#">privacy policy</a></li>
+          <li><a href="#">affiliate program</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="log in.html">Book an appointment </a></li>
+          <li><a href="#">Appointment status</a></li>
+          <li><a href="#">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">03-7863381</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer ends -->
+</body>

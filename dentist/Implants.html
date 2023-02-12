@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Root Driver Clinic-Dentist Clinic</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+<style>
+
+     .container {
+      box-sizing: border-box;
+      min-height: 90vh; 
+      font-family: 'Poppins', sans-serif;
+      background: #efefef;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      background: #fff;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      font-size: 12px;
+      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+     }
+     
+     .accordion {
+       position: relative;
+       width: 350px;
+       margin-left: 40px;
+     }
+     
+     .content-accordion {
+       margin-top: 35px;
+       margin-right: 50px;
+     }
+     
+     .question-answer {
+       width: 100%;
+       border-bottom: 1px solid #e8e8e8;
+     }
+     
+     .question {
+       display: flex;
+       justify-content: space-between;
+     }
+     
+     .accordion-img {
+       position: relative;
+       width: 320px;
+     }
+     
+     .title-question {
+       margin: 1.4rem 0rem;
+       font-size: 1.2rem;
+       font-weight: 500;
+       color: #000;
+     }
+     
+     .question-btn {
+       font-size: 1.5rem;
+       background: transparent;
+       border-color: transparent;
+       cursor: pointer;
+     }
+     
+     .up-icon {
+       display: none;
+     }
+     
+     .answer {
+       font-size: 1.2rem;
+       line-height: 1.8;
+       display: none;
+     }
+     
+     .show-text .answer {
+       display: block;
+     }
+     
+     .show-text .up-icon {
+       display: inline;
+     }
+     
+     .show-text .down-icon {
+       display: none;
+     }
+     
+     @media screen and (min-width: 992px) {
+       .accordion {
+         width: 920px;
+         height: 0;
+         display: flex;
+       }
+     
+       .accordion-img {
+         position: relative;
+         width: 420px;
+         top: 88px;
+       }
+     
+       .question-answer {
+         width: 380px;
+       }
+     
+       .content-accordion {
+         margin-top: 85px;
+       }
+     
+       .title {
+         margin-top: 50px;
+         text-align: center;
+         font-size: 3rem;
+       } }
+       </style>
+<body>
+<!-- navbar -->
+<header>
+  <a href="#" class="logo">
+    <img src="img/logo.png" alt="">
+  </a>
+  <!-- Menu icon -->
+  <i class='bx bx-menu' id="menu-icon"></i>
+  <!-- links -->
+  <ul class="navbar">
+    <li><a href="indexlogin.html">Home</a></li>
+    <li><a href="#footer">Contact</a></li>
+    <li><a href="Index.html">Log out</a></li>
+  </ul>
+  
+</header>
+<!-- content -->
+<section class="about" id="about">
+  <div class="about-img">
+    <img src="img/implant.jpg" alt="">
+  </div>
+  <div class="orthodontic-about-text">
+    <br>
+  <h2>Implantation</h2>
+  <p>
+    Leaving alone the space left by an extracted/missing tooth (or teeth) may not be a big deal.
+    But the results of not restoring in the space can include:<br><br>
+    - Adjacent teeth changing position, thus affecting your bite/chewing<br>
+    - Shrinking of jawbone, making the face appear prematurely older<br>
+    - A less appealing smile<br>
+    - Speech problem
+<br><br>
+<b>Why let dental problems affect your smile and quality of life?</b><br>
+Dental implants are made from titanium, a biocompatible material that is compatible with human tissue and 
+can be used to replace one or more teeth without affecting neighboring teeth. 
+They feel comfortable, natural and secure, and prevent jaws from shrinking, helping to maintain a younger face.
+    <br><br>
+      <b>Make an appointment with us - </b></p> 
+      <a href="appointment.html" class="btn">Book an Appointment >></a>
+</div>
+</section>
+<!-- content ends -->
+<!-- questions -->
+<section>
+<div class="container">
+  
+  <main class="accordion">
+      <div class="faq-img">
+          <img src="img/faqs.jpg" alt="" class="accordion-img">
+      </div>
+      <div class="content-accordion">
+          <div class="question-answer">
+              <div class="question">
+                  <h3 class="title-question">
+                      Do you do a Front-end developer?
+                  </h3>
+                  <button class="question-btn">
+                      <span class="up-icon">
+                          <i class="fas fa-chevron-up"></i>
+                      </span>
+                      <span class="down-icon">
+                          <i class="fas fa-chevron-down"></i>
+                      </span>
+                  </button>
+              </div>
+              <div class="answer">
+                  <p>Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. 
+                      Quisquam assumenda sapiente 
+                      mollitia excepturi quos id 
+                      magnam obcaecati non est? 
+                      Maiores?</p>
+              </div>
+          </div>
+          <div class="question-answer">
+              <div class="question">
+                  <h3 class="title-question">
+                      What is the differrence between 
+                      Front-end and Back-end?
+                  </h3>
+                  <button class="question-btn">
+                      <span class="up-icon">
+                          <i class="fas fa-chevron-up"></i>
+                      </span>
+                      <span class="down-icon">
+                          <i class="fas fa-chevron-down"></i>
+                      </span>
+                  </button>
+              </div>
+              <div class="answer">
+                  <p>Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. 
+                      Quisquam assumenda sapiente 
+                      mollitia excepturi quos id 
+                      magnam obcaecati non est? 
+                      Maiores?</p>
+              </div>
+          </div>
+          <div class="question-answer">
+              <div class="question">
+                  <h3 class="title-question">
+                      Which is better Front-end or Back-end?
+                  </h3>
+                  <button class="question-btn">
+                      <span class="up-icon">
+                          <i class="fas fa-chevron-up"></i>
+                      </span>
+                      <span class="down-icon">
+                          <i class="fas fa-chevron-down"></i>
+                      </span>
+                  </button>
+              </div>
+              <div class="answer">
+                  <p>Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. 
+                      Quisquam assumenda sapiente 
+                      mollitia excepturi quos id 
+                      magnam obcaecati non est? 
+                      Maiores?</p>
+              </div>
+          </div>
+          <div class="question-answer">
+              <div class="question">
+                  <h3 class="title-question">
+                      What is Front-end?
+                  </h3>
+                  <button class="question-btn">
+                      <span class="up-icon">
+                          <i class="fas fa-chevron-up"></i>
+                      </span>
+                      <span class="down-icon">
+                          <i class="fas fa-chevron-down"></i>
+                      </span>
+                  </button>
+              </div>
+              <div class="answer">
+                  <p>Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. 
+                      Quisquam assumenda sapiente 
+                      mollitia excepturi quos id 
+                      magnam obcaecati non est? 
+                      Maiores?</p>
+              </div>
+          </div>
+          <div class="question-answer">
+              <div class="question">
+                  <h3 class="title-question">
+                      What is Back-end?
+                  </h3>
+                  <button class="question-btn">
+                      <span class="up-icon">
+                          <i class="fas fa-chevron-up"></i>
+                      </span>
+                      <span class="down-icon">
+                          <i class="fas fa-chevron-down"></i>
+                      </span>
+                  </button>
+              </div>
+              <div class="answer">
+                  <p>Lorem ipsum dolor sit amet
+                      consectetur adipisicing elit. 
+                      Quisquam assumenda sapiente 
+                      mollitia excepturi quos id 
+                      magnam obcaecati non est? 
+                      Maiores?</p>
+              </div>
+          </div>
+      </div>
+  </main>
+</div>
+
+</section>
+<script src="main.js">
+</script>
+  <!-- footer starts -->
+  <footer class="footer" id="footer">
+    <div class="container1">
+      <div class="row1">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#about">about us</a></li>
+            <li><a href="#services">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="log in.html">Book an appointment </a></li>
+            <li><a href="#">Appointment status</a></li>
+            <li><a href="#">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="#">03-7863381</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends -->
+</body>
